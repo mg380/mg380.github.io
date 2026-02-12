@@ -1207,3 +1207,90 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+/*--------------------------------------------------------------
+# Theme Toggle
+--------------------------------------------------------------*/
+.theme-toggle {
+  position: fixed;
+  right: 15px;
+  bottom: 65px;
+  z-index: 996;
+  background: #0563bb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  border: none;
+  color: #fff;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  line-height: 0;
+}
+
+.theme-toggle:hover {
+  background: #0678e3;
+  color: #fff;
+}
+
+/* Dark Mode Overrides */
+[data-bs-theme="dark"] body {
+  background-color: #040b14;
+  color: #f2f3f5;
+}
+
+[data-bs-theme="dark"] #header {
+  background-color: #040b14;
+}
+
+[data-bs-theme="dark"] .section-bg {
+  background-color: #0a111a;
+}
+
+[data-bs-theme="dark"] .nav-menu a, 
+[data-bs-theme="dark"] .nav-menu a:focus {
+  color: #a8a9b4;
+}
+
+[data-bs-theme="dark"] .nav-menu a:hover, 
+[data-bs-theme="dark"] .nav-menu .active, 
+[data-bs-theme="dark"] .nav-menu .active:focus, 
+[data-bs-theme="dark"] .nav-menu li:hover > a {
+  color: #fff;
+  background: #0563bb;
+}
+
+[data-bs-theme="dark"] .resume .resume-title {
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .resume .resume-item h4 {
+  color: #0563bb;
+}
+
+[data-bs-theme="dark"] .services .icon-box {
+  background: #0a111a;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .services .icon-box:hover {
+  background: #0d1726;
+}
+
+[data-bs-theme="dark"] .services .title a {
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .services .description {
+  color: #a8a9b4;
+}
+
+[data-bs-theme="dark"] #footer {
+  background: #040b14;
+  color: #f2f3f5;
+}
+
+[data-bs-theme="dark"] #preloader {
+  background: #040b14;
+}
