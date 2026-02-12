@@ -1100,12 +1100,19 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <img src="https://placehold.co/600x400?text=Family+Moment+1" class="img-fluid" alt="Family Moment 1">
+              <div class="interests-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://placehold.co/600x400?text=Family+Moment+1" class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="https://placehold.co/600x400?text=Family+Moment+2" class="img-fluid" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
               <div class="portfolio-info">
                 <h4>Family</h4>
                 <p>Recharging with my biggest support system.</p>
                 <div class="portfolio-links">
                   <a href="https://placehold.co/1200x800?text=Family+Moment+1" data-gallery="familyGallery" class="portfolio-lightbox" title="Family Moment 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://placehold.co/1200x800?text=Family+Moment+2" data-gallery="familyGallery" class="portfolio-lightbox" title="Family Moment 2" style="display: none;"></a>
                 </div>
               </div>
             </div>
@@ -1113,38 +1120,19 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <img src="https://placehold.co/600x400?text=Family+Moment+2" class="img-fluid" alt="Family Moment 2">
-              <div class="portfolio-info">
-                <h4>Family</h4>
-                <p>Enjoying quality time and creating memories.</p>
-                <div class="portfolio-links">
-                  <a href="https://placehold.co/1200x800?text=Family+Moment+2" data-gallery="familyGallery" class="portfolio-lightbox" title="Family Moment 2"><i class="bx bx-plus"></i></a>
+              <div class="interests-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://placehold.co/600x400?text=Sports+Action+1" class="img-fluid" alt=""></div>
+                  <div class="swiper-slide"><img src="https://placehold.co/600x400?text=Sports+Action+2" class="img-fluid" alt=""></div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="https://placehold.co/600x400?text=Sports+Action+1" class="img-fluid" alt="Sports Action 1">
               <div class="portfolio-info">
                 <h4>Team Sports</h4>
                 <p>Applying teamwork and strategic thinking on the pitch.</p>
                 <div class="portfolio-links">
                   <a href="https://placehold.co/1200x800?text=Sports+Action+1" data-gallery="sportsGallery" class="portfolio-lightbox" title="Sports Action 1"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-wrap">
-              <img src="https://placehold.co/600x400?text=Sports+Action+2" class="img-fluid" alt="Sports Action 2">
-              <div class="portfolio-info">
-                <h4>Team Sports</h4>
-                <p>Focus and coordination in competitive environments.</p>
-                <div class="portfolio-links">
-                  <a href="https://placehold.co/1200x800?text=Sports+Action+2" data-gallery="sportsGallery" class="portfolio-lightbox" title="Sports Action 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://placehold.co/1200x800?text=Sports+Action+2" data-gallery="sportsGallery" class="portfolio-lightbox" title="Sports Action 2" style="display: none;"></a>
                 </div>
               </div>
             </div>
@@ -1415,6 +1403,24 @@
         icon.classList.add('bi-moon-stars');
       }
     }
+
+    /**
+     * Interests slider
+     */
+    new Swiper('.interests-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
   </script>
 
 </body>

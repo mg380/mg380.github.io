@@ -1294,3 +1294,30 @@ section {
 [data-bs-theme="dark"] #preloader {
   background: #040b14;
 }
+
+/*--------------------------------------------------------------
+# Interests Slider
+--------------------------------------------------------------*/
+.interests-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.interests-slider .swiper-pagination {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.interests-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.5;
+  border: 1px solid #0563bb;
+}
+
+.interests-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0563bb;
+  opacity: 1;
+}
